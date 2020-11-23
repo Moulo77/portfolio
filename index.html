@@ -3,55 +3,31 @@
 	<title>Portfolio</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="style.css">
+	<script src="burger.js" defer></script>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
 </head>
 <body>
+	
 	<div class="gauche">
-		<img src="img.jpg">
+		<div id="centrergauche">
+			<canvas id="projector">Your browser does not support the Canvas element.</canvas>
+			<img class="superpose" id="imgavatar" src="avatar.png" alt="Avatar">
+			<img class="superpose" id="imgcircle" src="circle.png" alt="Circle">
+			<h2><font color="#3c0034  ">Léo</font> Portier</h2>
+		</div>
 	</div>
 	<div class="droite">
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<p>La partie droite</p>
-		<a href="CV.pdf" target="_blank">Télécharger le pdf</a>
+		<nav id="menu">
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="projets.html">Projets</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<div id="menu-burger">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>
 	</div>
 </body>
