@@ -191,8 +191,6 @@ img.superpose {
 
 @media all and (orientation: portrait) {
     .gauche {
-        display: none;
-        float: none;
         width: 40%;
         height: 100%;
         float: left;
@@ -214,8 +212,7 @@ img.superpose {
         position: relative;
     }
     .droite {
-        float: none;
-        width: 100%;
+        display: none;
     }
     #menu-burger {
         display: none;
@@ -224,7 +221,7 @@ img.superpose {
         display: none;
     }
     #skills {
-        display: none;
+        margin-left: 35%;
     }
 
     /* Place the navbar at the bottom of the page, and make it stick */
