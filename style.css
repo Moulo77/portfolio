@@ -236,7 +236,7 @@ img.superpose {
 .snip:before,
 .snip:after {
     background-color: rgba(255, 255, 255, 0.5);
-    border-bottom: 75px solid white;
+    border-bottom: 100px solid white;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -293,12 +293,12 @@ img.superpose {
 .snip:hover>img,
 .snip.hover>img {
     opacity: 0.7;
-    transform: translateY(-75px);
+    transform: translateY(-100px);
 }
 
 .snip:hover>h3,
 .snip.hover>h3 {
-    transform: translateY(-75px);
+    transform: translateY(-100px);
 }
 
 .snip:hover:before,
@@ -330,7 +330,7 @@ img.superpose {
 #menu-burger {
     position: fixed;
     top: 1em;
-    right: 3.5em;
+    left: 37%;
     display: inline-block;
     cursor: pointer;
     z-index: 9;
@@ -343,7 +343,6 @@ img.superpose {
     height: 5px;
     background-color: #008000;
     margin: 6px 0;
-    margin-top: 10px;
     transition: 0.4s;
     z-index: 8;
 }
