@@ -526,7 +526,7 @@ img.superpose {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        background-color: #333;
+        background-color: #FF4500;
         overflow: hidden;
         position: fixed;
         bottom: 0;
