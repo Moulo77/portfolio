@@ -33,6 +33,23 @@ body {
     position: relative;
 }
 
+#barreorange1 {
+    width: 220px;
+    height: 7px;
+    margin-left: 50px;
+    background-color: #FF4500;
+    border-radius: 0px 6px 6px 0px;
+}
+
+#soustitre a {
+    text-decoration: none;
+    color: green;
+}
+
+#soustitre a:hover {
+    font-size: 115%;
+}
+
 img.superpose {
     position: absolute;
 }
