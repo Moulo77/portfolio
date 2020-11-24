@@ -482,7 +482,7 @@ img.superpose {
     }
 }
 
-@media (max-width:600px) {
+@media all and (orientation: portrait) {
     #menu-burger {
         display: none;
     }
@@ -491,7 +491,7 @@ img.superpose {
     }
 }
 
-@media all and (max-width: 780px) {
+@media all and (orientation: portrait {
     .gauche {
         display: none;
         float: none;
