@@ -530,7 +530,7 @@ img.superpose {
         overflow: hidden;
         position: fixed;
         bottom: 0;
-        width: 100%;
+        width: 200%;
     }
 
     /* Style the links inside the navigation bar */
@@ -541,7 +541,7 @@ img.superpose {
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 17px;
+        font-size: 40px;
     }
 
     /* Change the color of links on hover */
