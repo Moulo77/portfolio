@@ -62,7 +62,7 @@
     padding: 4em 2em;
     width: 25%;
     min-height: 40%;
-    border-radius: 0px 20px 20px 20px;
+    border-radius: 20px 0px 20px 20px;
     box-shadow: 1px 0 0px #9A2519;
     -moz-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
     -webkit-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
@@ -99,7 +99,7 @@
         left: -35%;
     }
     to {
-        left: 38%;
+        left: 8%;
     }
 }
 
@@ -108,13 +108,13 @@
         left: -35%;
     }
     to {
-        left: 38%;
+        left: 8%;
     }
 }
 
 @keyframes slideLeft {
     from {
-        left: 38%;
+        left: 8%;
     }
     to {
         left: -35%;
@@ -123,7 +123,7 @@
 
 @-webkit-keyframes slideLeft {
     from {
-        left: 38%;
+        left: 8%;
     }
     to {
         left: -35%;
