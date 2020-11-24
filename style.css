@@ -483,20 +483,17 @@ img.superpose {
 }
 
 @media all and (orientation: portrait) {
-    #menu-burger {
-        display: none;
-    }
-    #menu {
-        display: none;
-    }
-}
-
-@media all and (orientation: portrait {
     .gauche {
         display: none;
         float: none;
     }
     .droite {
         float: none;
+    }
+    #menu-burger {
+        display: none;
+    }
+    #menu {
+        display: none;
     }
 }
