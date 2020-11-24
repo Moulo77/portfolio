@@ -522,7 +522,7 @@ img.superpose {
     }
 
     /* Place the navbar at the bottom of the page, and make it stick */
-    .navbar {
+    .navbarphone {
         display: block;
         background-color: #333;
         overflow: hidden;
@@ -532,7 +532,7 @@ img.superpose {
     }
 
     /* Style the links inside the navigation bar */
-    .navbar a {
+    .navbarphone a {
         float: left;
         display: block;
         color: #f2f2f2;
@@ -543,13 +543,13 @@ img.superpose {
     }
 
     /* Change the color of links on hover */
-    .navbar a:hover {
+    .navbarphone a:hover {
         background-color: #ddd;
         color: black;
     }
 
     /* Add a color to the active/current link */
-    .navbar a.active {
+    .navbarphone a.active {
         background-color: #4CAF50;
         color: white;
     }
