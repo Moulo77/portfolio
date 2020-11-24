@@ -133,6 +133,62 @@ img.superpose {
 
 /* Responsive design */
 
+@media screen and (max-width: 750px){
+    .gauche {
+        display: none;
+        float: none;
+    }
+    .droite {
+        float: none;
+        width: 100%;
+    }
+    #menu-burger {
+        display: none;
+    }
+    #menu {
+        display: none;
+    }
+    #skills {
+        margin-left: 35%;
+    }
+
+    /* Place the navbar at the bottom of the page, and make it stick */
+    .navbarphone {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-grow: 1;
+        background-color: #FF4500;
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 5%;
+        z-index: 500;
+    }
+
+    /* Style the links inside the navigation bar */
+    .navbarphone a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 40px;
+    }
+
+    /* Change the color of links on hover */
+    .navbarphone a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .navbarphone a:active{
+        background-color:#ff5e00;
+    }
+}
+
 @media all and (orientation: portrait) {
     .gauche {
         display: none;
