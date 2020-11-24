@@ -497,4 +497,7 @@ img.superpose {
     #menu {
         display: none;
     }
+    #skills {
+        margin-left: 50%;
+    }
 }
