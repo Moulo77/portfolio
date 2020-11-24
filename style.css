@@ -199,11 +199,11 @@ img.superpose {
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 2px;
-    max-width: 200px;
+    min-width: 200px;
     overflow: hidden;
     position: relative;
     text-align: center;
-    width: 100%;
+    width: 200px;
 }
 
 .snip * {
@@ -484,46 +484,10 @@ img.superpose {
 
 @media (max-width:600px) {
     #menu-burger {
-        top: 1em;
-        right: 2em;
-        z-index: 9999;
+        display: none;
     }
     #menu {
-        left: -100%;
-        width: 100%;
-    }
-    /* Animations pour le menu slide */
-    @keyframes slideRight {
-        from {
-            left: -100%;
-        }
-        to {
-            left: 0%;
-        }
-    }
-    @-webkit-keyframes slideRight {
-        from {
-            left: -100%;
-        }
-        to {
-            left: 0%;
-        }
-    }
-    @keyframes slideLeft {
-        from {
-            left: 0%;
-        }
-        to {
-            left: -100%;
-        }
-    }
-    @-webkit-keyframes slideLeft {
-        from {
-            left: 0%;
-        }
-        to {
-            left: -100%;
-        }
+        display: none;
     }
 }
 
