@@ -1,237 +1,538 @@
-*{
-	margin: 0;
-	padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-html, body {
-	height: 100%;
-	font-family: 'Open Sans', sans-serif;
-	background-color:rbga(255,140,0,0.5);
+html,
+body {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rbga(255, 140, 0, 0.5);
 }
 
 .gauche {
-	width: 40%;
-	height: 100%;
-	float: left;
-	position: fixed;
-	background: linear-gradient(-90deg, #FF4500, #FF8C00, #A9A9A9, #708090);
-	color:rbga(255,140,0,0.5);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+    width: 40%;
+    height: 100%;
+    float: left;
+    position: fixed;
+    background: linear-gradient(-90deg, #FF4500, #FF8C00, #A9A9A9, #708090);
+    color: rbga(255, 140, 0, 0.5);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
 
-#centrergauche{
-	display:flex;
-	flex-direction:column;
-	justify-content: center;
-	margin-left: auto;
+#centrergauche {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: auto;
     margin-right: auto;
     width: 10em;
-	position:relative;
+    position: relative;
 }
 
-img.superpose{
-	position:absolute;
+img.superpose {
+    position: absolute;
 }
 
-#imgavatar{
-	height:125px;
-	width:125px;
-	z-index:11;
+#imgavatar {
+    height: 125px;
+    width: 125px;
+    z-index: 11;
 }
 
-#imgcircle{
-	height:130px;
-	width:130px;
-	animation: rotation 8s infinite linear;
-	z-index:10;
+#imgcircle {
+    height: 130px;
+    width: 130px;
+    animation: rotation 8s infinite linear;
+    z-index: 10;
 }
 
-@keyframes rotation{
-	from{
-		transform: rotate(0deg);
-	}
-	to{
-		transform: rotate(359deg);
-	}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .droite {
-	width: 60%;
-	float: right;
+    width: 60%;
+    float: right;
 }
 
-@keyframes bganim {
-  0%   {background-color: #708090;}
-  25%  {background-color: #A9A9A9;}
-  50%  {background-color: #FF8C00;}
-  100% {background-color: #FF4500;}
+.lien {
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    background-color: #708090;
+    border: 2px solid whitesmoke;
+    border-style: inset;
+    border-radius: 12px;
+    transition-duration: 1s;
 }
+
+.lien:hover {
+    background-color: whitesmoke;
+    color: #708090;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -moz-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-left: 30%;
+}
+
+
+/* ===============================================
+    Images choix metiers dans catÃ©gorie mÃ©tier
+================================================== */
+
+.snip_img {
+    display: inline-block;
+    overflow: hidden;
+    margin: 10px 8px;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    box-shadow: none !important;
+    padding: 16px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.snip_img img {
+    max-width: 100%;
+    backface-visibility: hidden;
+    vertical-align: top;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.snip_img:before,
+.snip_img:after {
+    z-index: -1;
+    position: absolute;
+    content: '';
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    opacity: 0.6;
+}
+
+.snip_img:before {
+    border: 8px solid #444;
+    top: 0px;
+    left: 0px;
+    bottom: 32px;
+    right: 32px;
+}
+
+.snip_img:after {
+    background-color: #444;
+    bottom: 0px;
+    right: 0px;
+    top: 32px;
+    left: 32px;
+}
+
+.snip_img a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.snip_img:hover:before,
+.snip_img.hover:before,
+.snip_img:hover:after,
+.snip_img.hover:after {
+    opacity: 1;
+}
+
+
+/* ==================================================
+    Fin Images choix metiers dans catÃ©gorie mÃ©tier
+=================================================== */
+
+
+/* ==================================================
+    Animations images section (index.html)
+   ================================================== */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,700;);
+.snip {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 140, 0, 0.6);
+    box-shadow: 1px 1px 1px 0px rgb(141, 141, 141);
+    padding: 20px 50px 20px 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    max-width: 200px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.snip * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.45s ease;
+    transition: all 0.45s ease;
+}
+
+.snip:before,
+.snip:after {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-bottom: 75px solid white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 1;
+    opacity: 0;
+}
+
+.snip:before {
+    -webkit-transform: scaleY(2);
+    transform: scaleY(2);
+}
+
+.snip:after {
+    -webkit-transform: scaleY(2);
+    transform: scaleY(2);
+}
+
+.snip img {
+    vertical-align: top;
+    max-width: 100%;
+    backface-visibility: hidden;
+}
+
+.snip figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.1em;
+    opacity: 0;
+    z-index: 2;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.snip p {
+    font-size: 0.75em;
+    max-width: 85%;
+    position: absolute;
+    bottom: 10px;
+}
+
+.snip:hover>img,
+.snip.hover>img {
+    opacity: 0.7;
+    transform: translateY(-75px);
+}
+
+.snip:hover>h3,
+.snip.hover>h3 {
+    transform: translateY(-75px);
+}
+
+.snip:hover:before,
+.snip.hover:before,
+.snip:hover:after,
+.snip.hover:after {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+.snip:hover {
+    -moz-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
+    transition-duration: 0.7s;
+}
+
+.snip:hover figcaption,
+.snip.hover figcaption {
+    opacity: 1;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+
 /* Menu burger */
+
 #menu-burger {
-	position:absolute; 
-	top:2.5em; right:3.5em; 
-	display:inline-block; 
-	cursor:pointer;
+    position: relative;
+    top: 1em;
+    right: 3.5em;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 9;
 }
+
 #menu-burger .bar1,
 #menu-burger .bar2,
 #menu-burger .bar3 {
-	width:32px; height:5px;
-	background-color:black; 
-	margin:6px 0; 
-	transition:0.4s;
-}
-#menu-burger:hover {
-	opacity:.75; 
-	transition:.5s;
-}
-#menu-burger.clicked .bar1 {
-	-webkit-transform:rotate(-45deg) translate(-8px, 8px); 
-	transform:rotate(-45deg) translate(-8px, 8px);
-}
-#menu-burger.clicked .bar2 {
-	opacity: 0;
-}
-#menu-burger.clicked .bar3 {
-	-webkit-transform:rotate(45deg) translate(-8px, -8px); 
-	transform:rotate(45deg) translate(-8px, -8px);
+    width: 32px;
+    height: 5px;
+    background-color: #008000;
+    margin: 6px 0;
+    transition: 0.4s;
+    z-index: 8;
 }
 
-/* Main menu (slide) */
-#menu.visible {
-	animation:.5s slideRight ease-in forwards; 
-	transition-delay:0;
+#menu-burger:hover {
+    opacity: .75;
+    transition: .5s;
 }
+
+#menu-burger.clicked .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-8px, 8px);
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+#menu-burger.clicked .bar2 {
+    opacity: 0;
+}
+
+#menu-burger.clicked .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+/* Main menu (slide) */
+
+#menu.visible {
+    animation: .5s slideRight ease-in forwards;
+    transition-delay: 0;
+}
+
 #menu.invisible {
-	animation:1s slideLeft ease-out forwards;
-	transition-delay:0;
+    animation: 1s slideLeft ease-out forwards;
+    transition-delay: 0;
 }
 
 #menu {
-	position:fixed; 
-	z-index:9999; 
-	left:99%; 
-	top:auto; 
-	background:#FF4500;
-	animation-name: bganim;
-	animation-duration: 15s;
-	animation-iteration-count:infinite;
-	animation-direction:alternate;
-	padding:4em 2em; 
-	width:25%; 
-	min-height:100%; 
-	box-shadow:1px 0 1px #9A2519;
+    position: fixed;
+    z-index: 9999;
+    left: -35%;
+    top: 50px;
+    background: #FF4500;
+    padding: 4em 2em;
+    width: 25%;
+    min-height: 40%;
+    border-radius: 0px 20px 20px 20px;
+    box-shadow: 1px 0 0px #9A2519;
+    -moz-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
 }
 
 #menu ul li {
-	list-style:none;
+    list-style: none;
 }
 
 #menu ul li a {
-	display:block;
-	color:#fff;
-	text-decoration:none; 
-	font-weight:700;
-	background:#2c3e50; 
-	transition:background .5s;
-	padding:1em;
-	text-align:center;
-	margin-bottom:.5em;
-	box-shadow:1px 1px 0 #666
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    background: #2c3e50;
+    transition: background .5s;
+    padding: 1em;
+    text-align: center;
+    margin-bottom: .5em;
+    box-shadow: 1px 1px 0 #666
 }
 
 #menu ul li a:hover {
-	background:#f1c40f;
-	transition:background .5s;
+    background: #f1c40f;
+    transition: background .5s;
 }
 
 
 /* Animations pour le menu slide */
+
 @keyframes slideRight {
-	from {left:99%;}
-	to {left:40%;}
+    from {
+        left: -35%;
+    }
+    to {
+        left: 38%;
+    }
 }
+
 @-webkit-keyframes slideRight {
-	from {left:99%;}
-	to {left:40%;}
+    from {
+        left: -35%;
+    }
+    to {
+        left: 38%;
+    }
 }
+
 @keyframes slideLeft {
-	from {left:40%;}
-	to {left:99%;}
+    from {
+        left: 38%;
+    }
+    to {
+        left: -35%;
+    }
 }
+
 @-webkit-keyframes slideLeft {
-	from {left:40%;}
-	to {left:99%;}
+    from {
+        left: 38%;
+    }
+    to {
+        left: -35%;
+    }
 }
+
 
 /* Responsive design */
+
 @media (max-width:1024px) {
-	#menu {left:-50%; width:50%;}
-	#menu-burger.clicked {position:fixed;}
-
-	/* Animations pour le menu slide */
-	@keyframes slideRight {
-		from {left:-50%;}
-		to {left:0%;}
-	}
-	@-webkit-keyframes slideRight {
-		from {left:-50%;}
-		to {left:0%;}
-	}
-	@keyframes slideLeft {
-		from {left:0%;}
-		to {left:-50%;}
-	}
-	@-webkit-keyframes slideLeft {
-		from {left:0%;}
-		to {left:-50%;}
-	}
+    #menu {
+        left: -50%;
+        width: 50%;
+    }
+    #menu-burger.clicked {
+        position: fixed;
+    }
+    /* Animations pour le menu slide */
+    @keyframes slideRight {
+        from {
+            left: -50%;
+        }
+        to {
+            left: 0%;
+        }
+    }
+    @-webkit-keyframes slideRight {
+        from {
+            left: -50%;
+        }
+        to {
+            left: 0%;
+        }
+    }
+    @keyframes slideLeft {
+        from {
+            left: 0%;
+        }
+        to {
+            left: -50%;
+        }
+    }
+    @-webkit-keyframes slideLeft {
+        from {
+            left: 0%;
+        }
+        to {
+            left: -50%;
+        }
+    }
 }
+
 @media (max-width:600px) {
-	#menu-burger {top:1em; right:2em; z-index:9999;}
-	#menu {left:-100%; width:100%;}
-
-	/* Animations pour le menu slide */
-	@keyframes slideRight {
-		from {left:-100%;}
-		to {left:0%;}
-	}
-	@-webkit-keyframes slideRight {
-		from {left:-100%;}
-		to {left:0%;}
-	}
-	@keyframes slideLeft {
-		from {left:0%;}
-		to {left:-100%;}
-	}
-	@-webkit-keyframes slideLeft {
-		from {left:0%;}
-		to {left:-100%;}
-	}
+    #menu-burger {
+        top: 1em;
+        right: 2em;
+        z-index: 9999;
+    }
+    #menu {
+        left: -100%;
+        width: 100%;
+    }
+    /* Animations pour le menu slide */
+    @keyframes slideRight {
+        from {
+            left: -100%;
+        }
+        to {
+            left: 0%;
+        }
+    }
+    @-webkit-keyframes slideRight {
+        from {
+            left: -100%;
+        }
+        to {
+            left: 0%;
+        }
+    }
+    @keyframes slideLeft {
+        from {
+            left: 0%;
+        }
+        to {
+            left: -100%;
+        }
+    }
+    @-webkit-keyframes slideLeft {
+        from {
+            left: 0%;
+        }
+        to {
+            left: -100%;
+        }
+    }
 }
 
-
-
-@media all and (max-width: 780px){
-	.gauche{
-		display:none;
-		float:none;
-	}
-	.droite{
-		float:none;
-	}
+@media all and (max-width: 780px) {
+    .gauche {
+        display: none;
+        float: none;
+    }
+    .droite {
+        float: none;
+    }
 }
-
