@@ -530,7 +530,8 @@ img.superpose {
         overflow: hidden;
         position: fixed;
         bottom: 0;
-        width: 200%;
+        width: 100%;
+        height: 10%;
     }
 
     /* Style the links inside the navigation bar */
