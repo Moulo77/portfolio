@@ -543,7 +543,7 @@ img.superpose {
         padding: 14px 16px;
         text-decoration: none;
         font-size: 40px;
-        border-left: #008000 1px;
+        border: 2px #008000;
     }
 
     /* Change the color of links on hover */
