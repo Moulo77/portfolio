@@ -116,8 +116,8 @@
 
 .snip:before,
 .snip:after {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-bottom: 100px solid white;
+    background-color: rgba(92, 92, 92, 0.4);
+    border-bottom: 100px solid #222121;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -126,7 +126,7 @@
     content: '';
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    z-index: 6;
+    z-index: 3;
     opacity: 0;
 }
 
