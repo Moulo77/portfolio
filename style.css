@@ -489,6 +489,7 @@ img.superpose {
     }
     .droite {
         float: none;
+        width: 100%;
     }
     #menu-burger {
         display: none;
