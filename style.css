@@ -224,7 +224,7 @@ img.superpose {
         display: none;
     }
     #skills {
-        margin-left: 35%;
+        display: none;
     }
 
     /* Place the navbar at the bottom of the page, and make it stick */
