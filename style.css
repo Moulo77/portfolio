@@ -183,4 +183,8 @@ img.superpose {
         background-color: #ddd;
         color: black;
     }
+
+    .navbarphone a:active{
+        background-color:#FF8C00;
+    }
 }
