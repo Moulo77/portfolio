@@ -196,7 +196,7 @@ img.superpose {
         float: none;
         top: 0;
         position: absolute;
-        background: linear-gradient(180deg, #222121, #222121, #FF8C00, #ff5e00);
+        background: linear-gradient(90deg, #222121, #222121, #FF8C00, #ff5e00);
         color: rbga(255, 140, 0, 0.5);
         background-size: 400% 400%;
         animation: gradientphone 15s ease infinite;
