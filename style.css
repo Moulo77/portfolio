@@ -279,7 +279,10 @@ img.superpose {
         font-size: 100%;
     }
 
-    #centrergauche h2, p{
+    #centrergauche p{
+        font-size: 150%;
+    }
+    #name{
         font-size: 150%;
     }
     .droite {
