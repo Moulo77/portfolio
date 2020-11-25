@@ -52,11 +52,12 @@ body {
 
 #soustitre a {
     text-decoration: none;
-    color: green;
+    font-style: italic;
 }
 
 #soustitre a:hover {
     font-size: 115%;
+    font-style: normal;
 }
 
 img.superpose {
