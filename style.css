@@ -202,6 +202,7 @@ img.superpose {
     }
     #centrergauche {
         display: flex;
+        top: 0;
         flex-direction: column;
         justify-content: space-between;
         text-align: center;
@@ -212,7 +213,7 @@ img.superpose {
     }
     .droite {
         width: 100%;
-        margin-bottom: 10%;
+        bottom: 50px;
         float: none;
         background-color: #222121;
     }
