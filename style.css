@@ -53,6 +53,7 @@ body {
 #soustitre a {
     text-decoration: none;
     font-style: italic;
+    color: white;
 }
 
 #soustitre a:hover {
