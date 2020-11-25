@@ -297,6 +297,11 @@ img.superpose {
         margin-left: 35%;
     }
 
+    img.superpose {
+        position: absolute;
+        margin-left: 30px;
+    }
+
     /* Place the navbar at the bottom of the page, and make it stick */
     .navbarphone {
         display: flex;
