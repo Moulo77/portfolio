@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="burger.css">
 	<script src="burger.js" defer></script>
 	<script src="popup.js" defer></script>
+	<script src="lettre.js" defer></script>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
 </head>
 <body>
@@ -40,7 +41,11 @@
 			<canvas id="projector">Your browser does not support the Canvas element.</canvas>
 			<img class="superpose" id="imgavatar" src="images/avatar.png" alt="Avatar">
 			<img class="superpose" id="imgcircle" src="images/circle.png" alt="Circle">
-			<h2><font color="#008000  ">Léo</font> Portier</h2>
+			<h2 id="name">Léo Portier</h2>
+			<p id="presentation">
+				Actuellement étudiant 2ème années en informatique à l'IUT de la Rochelle, 
+				je vous présente mon portfolio contenant <span class="txt-rotate" data-period="2000" data-rotate='[ "mon CV", "mes compétences", "mes projets personels et scolaire" ]'></span>
+			</p>
 			<a class="lien" href="files/CV.pdf" target="_blank">Voir mon CV</a>
 		</div>
 	</div>

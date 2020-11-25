@@ -1,3 +1,8 @@
+@font-face{
+    font-family: Aileron;
+    src: url(aileron/Aileron-Regular.otf) format(opentype);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +11,7 @@
 html,
 body {
     height: 100%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Aileron';
     background-color: rbga(255, 140, 0, 0.5);
     color: white;
 }
@@ -33,7 +38,7 @@ body {
     margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
-    width: 10em;
+    width: 15em;
     position: relative;
 }
 
@@ -60,9 +65,18 @@ body {
     font-style: normal;
 }
 
+#presentation{
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#presentation span{
+    color:  #026b02;
+}
+
 img.superpose {
     position: absolute;
-    margin-left: 15px;
+    margin-left: 60px;
 }
 
 #imgavatar {
