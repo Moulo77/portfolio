@@ -214,10 +214,10 @@ img.superpose {
     .droite {
         display: none;
     }
-    .gauche#menu-burger {
+    #menu-burger {
         display: none;
     }
-    .gauche#menu {
+    #menu {
         display: none;
     }
     #skills {
