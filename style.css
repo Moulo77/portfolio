@@ -192,7 +192,7 @@ img.superpose {
 @media all and (orientation: portrait) {
     .gauche {
         width: 100%;
-        height: 500px%;
+        height: 500px;
         float: none;
         position: fixed;
         background: linear-gradient(-75deg, #222121, #222121, #FF8C00, #ff5e00);
