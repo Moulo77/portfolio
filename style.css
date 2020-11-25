@@ -278,6 +278,10 @@ img.superpose {
         position: relative;
         font-size: 100%;
     }
+
+    #centrergauche h2, p{
+        font-size: 150%;
+    }
     .droite {
         width: 100%;
         margin-top: 500px;
