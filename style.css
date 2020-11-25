@@ -212,6 +212,7 @@ img.superpose {
         position: relative;
     }
     .droite {
+        width: 100%;
         float: none;
         background-color: #222121;
     }
