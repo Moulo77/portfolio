@@ -149,7 +149,7 @@ img.superpose {
 
 /* Responsive design */
 
-@media screen and (max-width: 1320px) and (min-width:820px){
+@media screen and (max-width: 1320px) and (min-width:980){
     .gauche {
         width: 100%;
         height: 500px;
@@ -243,7 +243,7 @@ img.superpose {
     }
 }
 
-@media screen and (orientation: portrait) and (max-width: 820px){
+@media screen and (orientation: portrait) and (max-width: 980px){
     .gauche {
         width: 100%;
         height: 500px;
