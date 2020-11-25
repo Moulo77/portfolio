@@ -212,6 +212,7 @@ img.superpose {
     }
     .droite {
         width: 100%;
+        margin-bottom: 10%;
         float: none;
         background-color: #222121;
     }
