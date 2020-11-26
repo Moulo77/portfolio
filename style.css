@@ -1,4 +1,4 @@
-@font-face{
+@font-face {
     font-family: Aileron;
     src: url(aileron/Aileron-Regular.otf) format(opentype);
 }
@@ -15,9 +15,6 @@ body {
     background-color: rbga(255, 140, 0, 0.5);
     color: white;
 }
-
-
-
 
 .gauche {
     width: 40%;
@@ -51,7 +48,7 @@ body {
     border-radius: 0px 6px 6px 0px;
 }
 
-#titre{
+#titre {
     margin-left: 35px;
     color: white;
 }
@@ -66,13 +63,13 @@ body {
     font-style: normal;
 }
 
-#presentation{
+#presentation {
     margin-bottom: 15px;
     font-weight: bold;
 }
 
-#presentation span{
-    color:  #026b02;
+#presentation span {
+    color: #026b02;
 }
 
 img.superpose {
@@ -121,6 +118,46 @@ img.superpose {
 }
 
 .lien {
+    display: none;
+}
+
+.cvlien {
+    text-decoration: none;
+    color: #026b02;
+    width: 125px;
+    height: 200px;
+    padding: 10px 30px;
+    margin-left: 27%;
+    background-color: #708090;
+    border: 2px solid whitesmoke;
+    border-style: inset;
+    border-radius: 12px;
+    transition-duration: 1s;
+}
+
+.cvlien:hover {
+    background: url(images/CV.png);
+    background-position: center;
+    background-size: cover;
+    border: 2px solid #708090;
+    border-style: inset;
+    border-radius: 12px;
+    transition-duration: 1s;
+    color: #708090;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -moz-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.cvlien:hover p {
+    visibility: hidden;
+}
+
+.lien {
     text-decoration: none;
     color: white;
     padding: 10px 30px;
@@ -129,6 +166,7 @@ img.superpose {
     border-style: inset;
     border-radius: 12px;
     transition-duration: 1s;
+    display: none;
 }
 
 .lien:hover {
@@ -147,9 +185,16 @@ img.superpose {
     cursor: pointer;
 }
 
+
 /* Responsive design */
 
-@media screen and (orientation:landscape) and (max-width: 1320px){
+@media screen and (orientation:landscape) and (max-width: 1320px) {
+    .cvlien {
+        display: none;
+    }
+    .lien {
+        display: block;
+    }
     .gauche {
         width: 100%;
         height: 500px;
@@ -200,20 +245,19 @@ img.superpose {
     }
     .bar1,
     .bar2,
-    .bar3{
+    .bar3 {
         display: none;
     }
     #skills {
         margin-left: 35%;
     }
-
     /* Place the navbar at the bottom of the page, and make it stick */
     .navbarphone {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         flex-grow: 1;
-        background: linear-gradient(-90deg,#ff5e00,#FF8C00);
+        background: linear-gradient(-90deg, #ff5e00, #FF8C00);
         overflow: hidden;
         position: fixed;
         top: 0;
@@ -221,7 +265,6 @@ img.superpose {
         height: 85px;
         z-index: 500;
     }
-
     /* Style the links inside the navigation bar */
     .navbarphone a {
         float: left;
@@ -232,19 +275,23 @@ img.superpose {
         text-decoration: none;
         font-size: 40px;
     }
-
     /* Change the color of links on hover */
     .navbarphone a:hover {
         background-color: #ddd;
         color: black;
     }
-
-    .navbarphone a:active{
-        background-color:#ff5e00;
+    .navbarphone a:active {
+        background-color: #ff5e00;
     }
 }
 
-@media screen and (orientation: portrait) and (max-width: 980px){
+@media screen and (orientation: portrait) and (max-width: 980px) {
+    .cvlien {
+        display: none;
+    }
+    .lien {
+        display: block;
+    }
     .gauche {
         width: 100%;
         height: 500px;
@@ -267,7 +314,6 @@ img.superpose {
             background-position: 0% 50%;
         }
     }
-    
     #centrergauche {
         display: flex;
         flex-direction: column;
@@ -279,11 +325,10 @@ img.superpose {
         position: relative;
         font-size: 100%;
     }
-
-    #centrergauche p{
+    #centrergauche p {
         font-size: 150%;
     }
-    #name{
+    #name {
         font-size: 150%;
     }
     .droite {
@@ -301,18 +346,16 @@ img.superpose {
     }
     .bar1,
     .bar2,
-    .bar3{
+    .bar3 {
         display: none;
     }
     #skills {
         margin-left: 35%;
     }
-
     img.superpose {
         position: absolute;
         margin-left: 175;
     }
-
     /* Place the navbar at the bottom of the page, and make it stick */
     .navbarphone {
         display: flex;
@@ -327,7 +370,6 @@ img.superpose {
         height: 5%;
         z-index: 500;
     }
-
     /* Style the links inside the navigation bar */
     .navbarphone a {
         float: left;
@@ -338,14 +380,12 @@ img.superpose {
         text-decoration: none;
         font-size: 40px;
     }
-
     /* Change the color of links on hover */
     .navbarphone a:hover {
         background-color: #ddd;
         color: black;
     }
-
-    .navbarphone a:active{
-        background-color:#ff5e00;
+    .navbarphone a:active {
+        background-color: #ff5e00;
     }
 }
