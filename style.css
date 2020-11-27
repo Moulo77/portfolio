@@ -136,8 +136,8 @@ img.superpose {
 }
 
 .cvlien:hover {
-    background: url(images/CV.png);
     background-color: rgba(255, 255, 255, 1);
+    background: url(images/CV.png);
     background-position: center;
     background-size: cover;
     border: 2px solid #708090;
