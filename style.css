@@ -14,6 +14,7 @@ body {
     font-family: 'Aileron';
     background-color: rbga(255, 140, 0, 0.5);
     color: black;
+    --bg-color: #FAD089;
 }
 
 .gauche {
@@ -21,7 +22,7 @@ body {
     height: 100%;
     float: left;
     position: fixed;
-    background: linear-gradient(90deg, #F38630, #FA6900, #E0E4CC, #E0E4CC);
+    background: linear-gradient(90deg, #F38630, #FA6900, var(--bg-color), var(--bg-color));
     color: rbga(255, 140, 0, 0.5);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
@@ -114,7 +115,7 @@ img.superpose {
 .droite {
     width: 60%;
     float: right;
-    background-color: #E0E4CC;
+    background-color: var(--bg-color);
 }
 
 .lien {
@@ -201,7 +202,7 @@ img.superpose {
         height: 500px;
         float: none;
         position: relative;
-        background: linear-gradient(90deg, #F38630, #FA6900, #E0E4CC, #E0E4CC);
+        background: linear-gradient(90deg, #F38630, #FA6900, var(--bg-color), var(--bg-color));
         color: rbga(255, 140, 0, 0.5);
         background-size: 400% 400%;
         animation: gradientphone 15s ease infinite;
@@ -236,7 +237,7 @@ img.superpose {
         margin-bottom: 5%;
         float: none;
         position: relative;
-        background-color: #E0E4CC;
+        background-color: var(--bg-color);
     }
     #menu-burger {
         display: none;
@@ -299,7 +300,7 @@ img.superpose {
         float: none;
         top: 0;
         position: absolute;
-        background: linear-gradient(90deg, #F38630, #FA6900, #E0E4CC, #E0E4CC);
+        background: linear-gradient(90deg, #F38630, #FA6900, var(--bg-color), var(--bg-color));
         color: rbga(255, 140, 0, 0.5);
         background-size: 400% 400%;
         animation: gradientphone 15s ease infinite;
@@ -337,7 +338,7 @@ img.superpose {
         margin-top: 500px;
         margin-bottom: 5%;
         float: none;
-        background-color: #E0E4CC;
+        background-color: var(--bg-color);
     }
     #menu-burger {
         display: none;
