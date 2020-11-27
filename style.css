@@ -154,11 +154,6 @@ img.superpose {
     cursor: pointer;
 }
 
-.cvlien:hover p {
-    color: #708090;
-    transition-duration: 1s;
-}
-
 .lien {
     text-decoration: none;
     color: white;
