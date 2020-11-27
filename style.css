@@ -154,7 +154,8 @@ img.superpose {
 }
 
 .cvlien:hover p {
-    visibility: hidden;
+    color: #708090;
+    transition-duration: 1s;
 }
 
 .lien {
