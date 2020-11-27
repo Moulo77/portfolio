@@ -154,6 +154,10 @@ img.superpose {
     cursor: pointer;
 }
 
+.cvlien p {
+    margin: auto;
+}
+
 .lien {
     text-decoration: none;
     color: white;
