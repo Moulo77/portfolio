@@ -21,7 +21,7 @@ body {
     height: 100%;
     float: left;
     position: fixed;
-    background: linear-gradient(90deg, #FF8C00, #ff5e00, #ffffff, #ffffff);
+    background: linear-gradient(90deg, #F38630, #FA6900, #E0E4CC, #E0E4CC);
     color: rbga(255, 140, 0, 0.5);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
@@ -44,7 +44,7 @@ body {
     width: 220px;
     height: 7px;
     margin-left: 50px;
-    background-color: #FF4500;
+    background-color: #FA6900;
     border-radius: 0px 6px 6px 0px;
 }
 
@@ -69,7 +69,7 @@ body {
 }
 
 #presentation span {
-    color: #7AF578;
+    color: #69D2E7;
 }
 
 img.superpose {
@@ -114,7 +114,7 @@ img.superpose {
 .droite {
     width: 60%;
     float: right;
-    background-color: #ffffff;
+    background-color: #E0E4CC;
 }
 
 .lien {
@@ -201,7 +201,7 @@ img.superpose {
         height: 500px;
         float: none;
         position: relative;
-        background: linear-gradient(90deg, #FF8C00, #ff5e00, #ffffff, #ffffff);
+        background: linear-gradient(90deg, #F38630, #FA6900, #E0E4CC, #E0E4CC);
         color: rbga(255, 140, 0, 0.5);
         background-size: 400% 400%;
         animation: gradientphone 15s ease infinite;
@@ -236,7 +236,7 @@ img.superpose {
         margin-bottom: 5%;
         float: none;
         position: relative;
-        background-color: #ffffff;
+        background-color: #E0E4CC;
     }
     #menu-burger {
         display: none;
@@ -258,7 +258,7 @@ img.superpose {
         flex-direction: row;
         justify-content: space-around;
         flex-grow: 1;
-        background: linear-gradient(-90deg, #ff5e00, #FF8C00);
+        background: linear-gradient(-90deg, #FA6900, #F38630);
         overflow: hidden;
         position: fixed;
         top: 0;
@@ -282,7 +282,7 @@ img.superpose {
         color: black;
     }
     .navbarphone a:active {
-        background-color: #ff5e00;
+        background-color: #FA6900;
     }
 }
 
@@ -299,7 +299,7 @@ img.superpose {
         float: none;
         top: 0;
         position: absolute;
-        background: linear-gradient(90deg, #FF8C00, #ff5e00, #ffffff, #ffffff);
+        background: linear-gradient(90deg, #F38630, #FA6900, #E0E4CC, #E0E4CC);
         color: rbga(255, 140, 0, 0.5);
         background-size: 400% 400%;
         animation: gradientphone 15s ease infinite;
@@ -337,7 +337,7 @@ img.superpose {
         margin-top: 500px;
         margin-bottom: 5%;
         float: none;
-        background-color: #ffffff;
+        background-color: #E0E4CC;
     }
     #menu-burger {
         display: none;
@@ -363,7 +363,7 @@ img.superpose {
         flex-direction: row;
         justify-content: space-around;
         flex-grow: 1;
-        background-color: #FF4500;
+        background-color: #FA6900;
         overflow: hidden;
         position: fixed;
         bottom: 0;
@@ -387,6 +387,6 @@ img.superpose {
         color: black;
     }
     .navbarphone a:active {
-        background-color: #ff5e00;
+        background-color: #FA6900;
     }
 }
