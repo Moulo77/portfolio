@@ -79,3 +79,9 @@ body {
     height: 2px;
     background-color: gray;
 }
+
+@media screen and (orientation: portrait) and (max-width: 980px) {
+    .desc a {
+        display: none;
+    }
+}
