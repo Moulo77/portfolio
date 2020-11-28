@@ -81,6 +81,9 @@ body {
 }
 
 @media screen and (orientation: portrait) and (max-width: 980px) {
+    #headerprojet {
+        display: none;
+    }
     .desc a {
         margin-left: auto;
         margin-right: auto;
@@ -133,6 +136,6 @@ body {
         color: black;
     }
     .navbarphone a:active {
-        background-color: var(--gradient2);
+        background-color: linear-gradient(90deg, var(--gradient2), #df4674, var(--gradient1));
     }
 }
