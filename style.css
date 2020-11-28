@@ -378,7 +378,7 @@ img.superpose {
         flex-direction: row;
         justify-content: space-around;
         flex-grow: 1;
-        background-color: var(--gradient2);
+        background: linear-gradient(90deg, var(--gradient2), #df4674, var(--gradient1));
         overflow: hidden;
         position: fixed;
         bottom: 0;
