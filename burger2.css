@@ -101,37 +101,37 @@
 
 @keyframes slideRight {
     from {
-        left: -35%;
+        right: -35%;
     }
     to {
-        left: 8%;
+        right: 8%;
     }
 }
 
 @-webkit-keyframes slideRight {
     from {
-        left: -35%;
+        right: -35%;
     }
     to {
-        left: 8%;
+        right: 8%;
     }
 }
 
 @keyframes slideLeft {
     from {
-        left: 8%;
+        right: 8%;
     }
     to {
-        left: -35%;
+        right: -35%;
     }
 }
 
 @-webkit-keyframes slideLeft {
     from {
-        left: 8%;
+        right: 8%;
     }
     to {
-        left: -35%;
+        right: -35%;
     }
 }
 
