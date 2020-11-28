@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Aileron';
+    color: black;
+    --bg-color: rgba(228, 228, 228, 0.5);
+    --gradient1: #e62e7a;
+    --gradient2: #F5634A;
+    --items: #3c9c84;
+}
+
+#headerprojet {
+    top: 0;
+    width: 100%;
+    height: 75px;
+    background: linear-gradient(90deg, var(--gradient2), #df4674, var(--gradient1));
+}
+
+#titreprojet {
+    margin-top: 20px;
+}
+
+#barretitre {
+    width: 400px;
+    height: 7px;
+    margin-left: 35px;
+    background-color: var(--items);
+    border-radius: 6px 6px 6px 6px;
+}
+
+#bloctitreprojet {
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+}
+
+#mainframe {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.unprojet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.desc {
+    width: 600px;
+    font-size: 200%;
+    margin-top: 20px;
+}
+
+.desc a {
+    margin-left: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--items);
+}
+
+.desc a:hover {
+    color: var(--gradient2);
+}
+
+#barregrise {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 2px;
+    background-color: gray;
+}

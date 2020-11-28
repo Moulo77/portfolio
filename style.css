@@ -12,9 +12,8 @@ html,
 body {
     height: 100%;
     font-family: 'Aileron';
-    background-color: rbga(255, 140, 0, 0.5);
     color: black;
-    --bg-color: rgba(255, 255, 255, 0.5);
+    --bg-color: rgba(228, 228, 228, 0.5);
     --gradient1: #e62e7a;
     --gradient2: #F5634A;
     --items: #3c9c84;
@@ -199,13 +198,6 @@ img.superpose {
     -webkit-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
     cursor: pointer;
-}
-
-.header {
-    top: 0;
-    width: 100%;
-    height: 100px;
-    background-color: linear-gradient(90deg, var(--gradient1), #df4674, var(--gradient2));
 }
 
 
