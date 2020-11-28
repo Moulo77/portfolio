@@ -107,6 +107,9 @@ body {
     .bar3 {
         display: none;
     }
+    .lien::before {
+        content: "Attention vous ne pourrez pas lancez les jeux sur mobile";
+    }
     .navbarphone {
         display: flex;
         flex-direction: row;
