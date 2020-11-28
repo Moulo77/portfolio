@@ -87,6 +87,7 @@ body {
     .unprojet {
         display: flex;
         justify-content: center;
+        text-align: center;
     }
     #menu-burger {
         display: none;
