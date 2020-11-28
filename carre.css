@@ -3,7 +3,13 @@
     flex-direction: column;
     justify-content: space-between;
     margin-top: 80px;
-    margin-left: 30%;
+    margin-left: 33%;
+}
+
+@media screen and (orientation:landscape) and (max-width: 1320px) {
+    #skills {
+        margin-left: 38%;
+    }
 }
 
 

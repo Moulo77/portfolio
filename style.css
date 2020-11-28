@@ -17,6 +17,7 @@ body {
     --gradient1: #e62e7a;
     --gradient2: #F5634A;
     --items: #3c9c84;
+    background-color: var(--bg-color);
 }
 
 .navbarphone {
@@ -48,15 +49,16 @@ body {
 }
 
 #barreorange1 {
-    width: 220px;
+    width: 125px;
     height: 7px;
-    margin-left: 50px;
+    margin-left: 43%;
     background-color: var(--items);
-    border-radius: 0px 6px 6px 0px;
+    border-radius: 6px 6px 6px 6px;
 }
 
 #titre {
-    margin-left: 35px;
+    margin-top: 20px;
+    text-align: center;
     color: black;
 }
 
@@ -125,7 +127,7 @@ img.superpose {
 }
 
 #deux {
-    background-color: #e62e7a;
+    background-color: var(--gradient2);
 }
 
 #un {
@@ -190,7 +192,7 @@ img.superpose {
     border-style: inset;
     border-radius: 12px;
     transition-duration: 1s;
-    color: #708090;
+    color: var(--items);
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
@@ -209,6 +211,7 @@ img.superpose {
     }
     .lien {
         display: block;
+        color: white;
     }
     .gauche {
         width: 100%;
@@ -263,8 +266,8 @@ img.superpose {
     .bar3 {
         display: none;
     }
-    #skills {
-        margin-left: 35%;
+    #barreorange1 {
+        margin: auto;
     }
     /* Place the navbar at the bottom of the page, and make it stick */
     .navbarphone {
