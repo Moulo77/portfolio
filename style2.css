@@ -81,7 +81,7 @@ body {
 }
 
 @media screen and (orientation: portrait) and (max-width: 980px) {
-    .desc a {
+    .unprojet img {
         display: none;
     }
 }
