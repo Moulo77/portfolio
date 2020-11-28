@@ -107,7 +107,7 @@ body {
     .bar3 {
         display: none;
     }
-    .lien::before {
+    .notephone::before {
         content: "Attention vous ne pourrez pas lancez les jeux sur mobile";
     }
     .navbarphone {
