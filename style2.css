@@ -84,4 +84,45 @@ body {
     .unprojet img {
         display: none;
     }
+    .unprojet {
+        display: flex;
+        justify-content: center;
+    }
+    #menu-burger {
+        display: none;
+    }
+    #menu {
+        display: none;
+    }
+    .navbarphone {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-grow: 1;
+        background-color: var(--gradient2);
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 5%;
+        z-index: 500;
+    }
+    /* Style the links inside the navigation bar */
+    .navbarphone a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 40px;
+    }
+    /* Change the color of links on hover */
+    .navbarphone a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    .navbarphone a:active {
+        background-color: var(--gradient2);
+    }
 }
