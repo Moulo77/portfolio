@@ -94,6 +94,11 @@ body {
     #menu {
         display: none;
     }
+    .bar1,
+    .bar2,
+    .bar3 {
+        display: none;
+    }
     .navbarphone {
         display: flex;
         flex-direction: row;
