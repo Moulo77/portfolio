@@ -140,12 +140,12 @@ img.superpose {
 
 .cvlien {
     text-decoration: none;
-    color: #e62e7a;
+    color: black;
     width: 125px;
     height: 200px;
     padding: 10px 30px;
     margin-left: 27%;
-    background-color: var(--items);
+    background-color: white;
     border: 2px solid whitesmoke;
     border-style: inset;
     border-radius: 12px;
