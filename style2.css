@@ -112,7 +112,7 @@ body {
         flex-direction: row;
         justify-content: space-around;
         flex-grow: 1;
-        background-color: var(--gradient2);
+        background-color: linear-gradient(90deg, var(--gradient2), #df4674, var(--gradient1));
         overflow: hidden;
         position: fixed;
         bottom: 0;
@@ -136,6 +136,6 @@ body {
         color: black;
     }
     .navbarphone a:active {
-        background-color: linear-gradient(90deg, var(--gradient2), #df4674, var(--gradient1));
+        background-color: var(--gradient2);
     }
 }
