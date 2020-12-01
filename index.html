@@ -2,6 +2,10 @@
 <head>
 	<title>Portfolio</title>
 	<meta charset="UTF-8">
+	<title>Portier Léo</title>
+    <meta name="key-words" content="Portier,Léo,portfolio,web,développeur,developer,site,stage,projet,CV,cv,Leo,leo,portier,etudiant,étudiant"/>
+    <meta name="description" content="Voici le portfolio de Portier Léo, un jeune étudiant motivé !"/>
+    <link rel="shortcut icon" href="images/l.ico" type="image/x-icon">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="popup.css">
 	<link rel="stylesheet" href="carre.css">
@@ -14,11 +18,32 @@
 <body>
 	<div class="gauche">
 		<nav id="menu">
-			<ul>
-				<li><a href="index.html">Accueil</a></li>
-				<li><a href="projets.html">Projets</a></li>
-				<li><a id="btnPopup" class="btnPopup" href="mailto: leoportier7@gmail.com?subject=Prise%20de%20contact">Contact</a></li>																																																																																																																																											
+			<ul id="listemenu">
+				<li id="acc"><a href="#" >Accueil</a></li>
+				<li id="pro"><a href="#" >Projets</a></li>
+				<li id="con"><a href="#" >Contact</a></li>	
 			</ul>
+			<div class="burgermenudesc" id="acctexte" style="display:block">
+				<a href="index.html">Accueil</a>
+				<br/><br/><br/>
+				<p>
+					Retourner sur la page d'accueil où vous aurez accès à 
+					mon CV, mes compétences et ma description.
+				</p>
+			</div>
+			<div class="burgermenudesc" id="protexte" style="display:none">
+				<p>Voir mes différents <a href="projets.html">projets</a></p>
+				<br/><br/>
+				<p>
+					Vous pourrez observer sur cette page mes différents
+					projets que j'ai fait dans le cadre scolaire ou personel.
+				</p>
+			</div>
+			<div class="burgermenudesc" id="contexte" style="display:none">
+				<p>Me contacter par <a id="btnPopup" class="btnPopup" href="mailto: leoportier7@gmail.com?subject=Prise%20de%20contact">email</a></p>
+				<br/><br/>
+				<a class="linkedin" href="https://www.linkedin.com/in/l%C3%A9o-portier-5497ab1a1/" target="_blank"></a>
+			</div>
 			<div id="overlay" class="overlay">																							
 				<div id="popup" class="popup">
 					<h2>																																			

@@ -9,25 +9,46 @@
 	<script src="popup.js" defer></script>
 </head>
 <body>
-	<nav id="menu">
-		<ul>
-			<li><a href="index.html">Accueil</a></li>
-			<li><a href="projets.html">Projets</a></li>
-			<li><a id="btnPopup" class="btnPopup" href="mailto: leoportier7@gmail.com?subject=Prise%20de%20contact">Contact</a></li>																																																																																																																																											
-		</ul>
-		<div id="overlay" class="overlay">																							
-			<div id="popup" class="popup">
-				<h2>																																			
-					Contact
-					<span id="btnClose" class="btnClose">&times;</span>
-				</h2> <br/><br/>
-					<div>
-						Votre demande de contact a été prise en compte.
-						Vous allez être rediriger pour rédiger et envoyer un mail pour contacter le propriétaire du site.
-					</div>
+<nav id="menu">
+			<ul id="listemenu">
+				<li id="acc"><a href="#" >Accueil</a></li>
+				<li id="pro"><a href="#" >Projets</a></li>
+				<li id="con"><a href="#" >Contact</a></li>	
+			</ul>
+			<div class="burgermenudesc" id="acctexte" style="display:block">
+				<a href="index.html">Accueil</a>
+				<br/><br/><br/>
+				<p>
+					Retourner sur la page d'accueil où vous aurez accès à 
+					mon CV, mes compétences et ma description.
+				</p>
 			</div>
-		</div>
-	</nav>
+			<div class="burgermenudesc" id="protexte" style="display:none">
+				<p>Voir mes différents <a href="projets.html">projets</a></p>
+				<br/><br/>
+				<p>
+					Vous pourrez observer sur cette page mes différents
+					projets que j'ai fait dans le cadre scolaire ou personel.
+				</p>
+			</div>
+			<div class="burgermenudesc" id="contexte" style="display:none">
+				<p>Me contacter par <a id="btnPopup" class="btnPopup" href="mailto: leoportier7@gmail.com?subject=Prise%20de%20contact">email</a></p>
+				<br/><br/>
+				<a class="linkedin" href="https://www.linkedin.com/in/l%C3%A9o-portier-5497ab1a1/" target="_blank"></a>
+			</div>
+			<div id="overlay" class="overlay">																							
+				<div id="popup" class="popup">
+					<h2>																																			
+						Contact
+						<span id="btnClose" class="btnClose">&times;</span>
+					</h2> <br/><br/>
+						<div>
+							Votre demande de contact a été prise en compte.
+							Vous allez être rediriger pour rédiger et envoyer un mail pour contacter le propriétaire du site.
+						</div>
+				</div>
+			</div>
+		</nav>
 	<nav id="headerprojet">
 		<div id="menu-burger">
 			<div class="bar1"></div>

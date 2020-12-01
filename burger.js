@@ -8,80 +8,126 @@ var burgerMenu = document.querySelector("#menu-burger");
 // Vérifie si l'événement touchstart existe et est le premier déclenché
 var clickedEvent = "click"; // Au clic si "touchstart" n'est pas détecté
 window.addEventListener('touchstart', function detectTouch() {
-	clickedEvent = "touchstart"; // Transforme l'événement en "touchstart"
-	window.removeEventListener('touchstart', detectTouch, false);
+    clickedEvent = "touchstart"; // Transforme l'événement en "touchstart"
+    window.removeEventListener('touchstart', detectTouch, false);
 }, false);
 
 // Créé un "toggle class" en Javascrit natif (compatible partout)
 burgerMenu.addEventListener(clickedEvent, function(evt) {
-	console.log(clickedEvent);
-	// Modification du menu burger
-	if(!this.getAttribute("class")) {
-		this.setAttribute("class", "clicked");
-	} else {
-		this.removeAttribute("class");
-	}
-	// Variante avec x.classList (ou DOMTokenList), pas 100% compatible avant IE 11...
-	// burgerMenu.classList.toggle("clicked");
+    console.log(clickedEvent);
+    // Modification du menu burger
+    if (!this.getAttribute("class")) {
+        this.setAttribute("class", "clicked");
+    } else {
+        this.removeAttribute("class");
+    }
+    // Variante avec x.classList (ou DOMTokenList), pas 100% compatible avant IE 11...
+    // burgerMenu.classList.toggle("clicked");
 
-	// Créé l'effet pour le menu slide (compatible partout)
-	if(mainMenu.getAttribute("class") != "visible") {
-		mainMenu.setAttribute("class", "visible");
-	} else {
-		mainMenu.setAttribute("class", "invisible");
-	}
+    // Créé l'effet pour le menu slide (compatible partout)
+    if (mainMenu.getAttribute("class") != "visible") {
+        mainMenu.setAttribute("class", "visible");
+    } else {
+        mainMenu.setAttribute("class", "invisible");
+    }
 }, false);
 
 /*===============================*/
 /*=== Swipe avec Touch Events ===*/
 /*===============================*/
 // Si l'écran est plus petit que "x" pixels (optionnel) // 1024px ici
-if(screen.width <= 1024) {
-	var startX = 0; // Position de départ
-	var distance = 100; // 100 px de swipe pour afficher le menu
+if (screen.width <= 1024) {
+    var startX = 0; // Position de départ
+    var distance = 100; // 100 px de swipe pour afficher le menu
 
-	// Au premier point de contact
-	window.addEventListener("touchstart", function(evt) {
-		// Récupère les "touches" effectuées
-		var touches = evt.changedTouches[0];
-		startX = touches.pageX;
-		between = 0;
-	}, false);
+    // Au premier point de contact
+    window.addEventListener("touchstart", function(evt) {
+        // Récupère les "touches" effectuées
+        var touches = evt.changedTouches[0];
+        startX = touches.pageX;
+        between = 0;
+    }, false);
 
-	// Quand les points de contact sont en mouvement
-	window.addEventListener("touchmove", function(evt) {
-		// Limite les effets de bord avec le tactile...
-		evt.preventDefault();
-		evt.stopPropagation();
-	}, false);
+    // Quand les points de contact sont en mouvement
+    window.addEventListener("touchmove", function(evt) {
+        // Limite les effets de bord avec le tactile...
+        evt.preventDefault();
+        evt.stopPropagation();
+    }, false);
 
-	// Quand le contact s'arrête
-	window.addEventListener("touchend", function(evt) {
-		var touches = evt.changedTouches[0];
-		var between = touches.pageX - startX;
+    // Quand le contact s'arrête
+    window.addEventListener("touchend", function(evt) {
+        var touches = evt.changedTouches[0];
+        var between = touches.pageX - startX;
 
-		// Détection de la direction
-		if(between > 0) {
-			var orientation = "ltr";
-		} else {
-			var orientation = "rtl";
-		}
+        // Détection de la direction
+        if (between > 0) {
+            var orientation = "ltr";
+        } else {
+            var orientation = "rtl";
+        }
 
-		// Modification du menu burger
-		if(Math.abs(between) >= distance && orientation == "ltr" && mainMenu.getAttribute("class") != "visible") {
-				burgerMenu.setAttribute("class", "clicked");
-		}
-		if(Math.abs(between) >= distance && orientation == "rtl" && mainMenu.getAttribute("class") != "invisible") {
-				burgerMenu.removeAttribute("class");
-		}
+        // Modification du menu burger
+        if (Math.abs(between) >= distance && orientation == "ltr" && mainMenu.getAttribute("class") != "visible") {
+            burgerMenu.setAttribute("class", "clicked");
+        }
+        if (Math.abs(between) >= distance && orientation == "rtl" && mainMenu.getAttribute("class") != "invisible") {
+            burgerMenu.removeAttribute("class");
+        }
 
-		// Créé l'effet pour le menu slide (compatible partout)
-		if(Math.abs(between) >= distance && orientation == "ltr" && mainMenu.getAttribute("class") != "visible") {
-			mainMenu.setAttribute("class", "visible");
-		}
-		if(Math.abs(between) >= distance && orientation == "rtl" && mainMenu.getAttribute("class") != "invisible") {
-			mainMenu.setAttribute("class", "invisible");
-		}
-	}, false);
+        // Créé l'effet pour le menu slide (compatible partout)
+        if (Math.abs(between) >= distance && orientation == "ltr" && mainMenu.getAttribute("class") != "visible") {
+            mainMenu.setAttribute("class", "visible");
+        }
+        if (Math.abs(between) >= distance && orientation == "rtl" && mainMenu.getAttribute("class") != "invisible") {
+            mainMenu.setAttribute("class", "invisible");
+        }
+    }, false);
 }
 
+var underlineMenuItems = document.querySelectorAll("#listemenu li");
+underlineMenuItems[0].classList.add("active");
+underlineMenuItems.forEach(function(item) {
+    item.addEventListener("click", function() {
+        underlineMenuItems.forEach(function(item) { return item.classList.remove("active"); });
+        item.classList.add("active");
+    });
+});
+
+var acc = document.getElementById("acc");
+var pro = document.getElementById("pro");
+var con = document.getElementById("con");
+
+var acctexte = document.getElementById("acctexte");
+var protexte = document.getElementById("protexte");
+var contexte = document.getElementById("contexte");
+
+acc.addEventListener('click', () => {
+    if (acc.classList.contains("active")) {
+        acctexte.style.display = "block";
+        protexte.style.display = "none";
+        contexte.style.display = "none";
+    } else {
+        acctexte.style.display = "none";
+    }
+});
+
+pro.addEventListener('click', () => {
+    if (pro.classList.contains("active")) {
+        acctexte.style.display = "none";
+        protexte.style.display = "block";
+        contexte.style.display = "none";
+    } else {
+        protexte.style.display = "none";
+    }
+});
+
+con.addEventListener('click', () => {
+    if (con.classList.contains("active")) {
+        acctexte.style.display = "none";
+        protexte.style.display = "none";
+        contexte.style.display = "block";
+    } else {
+        contexte.style.display = "none";
+    }
+});

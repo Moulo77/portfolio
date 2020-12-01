@@ -15,7 +15,8 @@
     margin-left: 9%;
     width: 25%;
     height: 20%;
-    background-color: rgb(220, 220, 220);
+    background-color: black;
+    color: white;
     padding: 1em;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
@@ -26,5 +27,5 @@
     float: right;
     font-size: 16pt;
     cursor: pointer;
-    color: rgb(0, 0, 0);
+    color: white;
 }

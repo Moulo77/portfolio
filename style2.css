@@ -18,7 +18,7 @@ body {
     top: 0;
     width: 100%;
     height: 75px;
-    background: linear-gradient(90deg, var(--gradient2), #df4674, var(--gradient1));
+    background: black;
 }
 
 #titreprojet {

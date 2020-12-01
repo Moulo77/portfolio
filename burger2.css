@@ -62,7 +62,7 @@
     z-index: 9999;
     right: -35%;
     top: 50px;
-    background: linear-gradient(90deg, var(--gradient1), #df4674, var(--gradient2));
+    background: whitesmoke;
     padding: 4em 2em;
     width: 25%;
     min-height: 40%;
@@ -73,29 +73,97 @@
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
 }
 
-#menu ul li {
-    list-style: none;
-    margin-top: 35px;
+#listemenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    font-size: 130%;
+    list-style-type: none;
+    border-bottom: 1px solid gray;
 }
 
-#menu ul li a {
-    display: block;
+#listemenu:hover li:not(:hover) a {
+    opacity: 0.2;
+}
+
+#listemenu li {
+    position: relative;
+    padding: 0px 25px 30px 25px;
+    cursor: pointer;
+}
+
+#listemenu li::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--item);
+    transform: scaleX(0);
+    transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#listemenu li:hover::after,
+#listemenu li.active::after {
+    transform: scaleX(1);
+}
+
+#listemenu li a {
+    position: relative;
+    display: flex;
     color: black;
     text-decoration: none;
-    font-weight: 700;
-    background: linear-gradient(90deg, #FAD089, #df4674);
-    transition: background .5s;
-    padding: 1em;
-    text-align: center;
-    margin-bottom: .5em;
-    border-radius: 10px;
-    box-shadow: 1px 1px 0 #666
+    transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-#menu ul li a:hover {
-    background: linear-gradient(90deg, #df4674, #FAD089);
-    color: white;
-    transition: background .5s;
+.burgermenudesc {
+    margin-top: 50px;
+    color: black;
+    font-size: 130%;
+    text-align: center;
+}
+
+.burgermenudesc a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid black;
+    transition-duration: 0.3s;
+}
+
+.burgermenudesc a:hover {
+    color: var(--item);
+    border-bottom: 2px solid var(--item);
+}
+
+.linkedin {
+    text-decoration: none;
+    color: black;
+    width: 125px;
+    height: 200px;
+    padding: 7px 75px;
+    background-image: url(LinkedIn-Logos/LI-Logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-bottom: none;
+    border: 2px solid black;
+    border-radius: 12px;
+    transition-duration: 1s;
+}
+
+.linkedin:hover {
+    border-bottom: none;
+    border: 2px solid black;
+    border-radius: 12px;
+    transition-duration: 0.6s;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -moz-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
 }
 
 
