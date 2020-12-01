@@ -30,8 +30,8 @@ body {
     float: left;
     position: fixed;
     background: linear-gradient(90deg, black, var(--bg-color));
-    color: rbga(255, 140, 0, 0.5);
-    background-size: 500% 500%;
+    color: white;
+    background-size: 300% 300%;
     animation: gradient 15s ease infinite;
 }
 
