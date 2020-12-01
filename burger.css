@@ -84,7 +84,7 @@
     text-decoration: none;
     border-radius: 10px;
     font-weight: 700;
-    background: white;
+    background: background: linear-gradient(90deg, #FAD089, #df4674);;
     transition: background .5s;
     padding: 1em;
     text-align: center;
@@ -93,7 +93,7 @@
 }
 
 #menu ul li a:hover {
-    background: black;
+    background: background: linear-gradient(90deg, #df4674, #FAD089);
     color: white;
     transition: background .5s;
 }
