@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+	<title>Portfolio</title>
+	<meta charset="UTF-8">
+	<title>Portier Léo</title>
+    <meta name="description" content="Voici le portfolio de Portier Léo, un jeune étudiant motivé !"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="nav.js" defer></script>
+    <script src="text.js" defer></script>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" id="name" href="index.html">
+            Portier Léo
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav" id="listemenu">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Description<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Compétences</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projets</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron" id="presentation">
+        <div id="about">
+            <h2>Léo Portier</h2>
+            <p>
+                Actuellement étudiant 2ème année en informatique à l'IUT de la Rochelle, 
+                je vous présente mon portfolio contenant 
+                <br/><span class="txt-rotate" id="texte" data-period="2000" data-rotate='[ "mon CV", "mes compétences", "mes projets personels et scolaires" ]'></span>
+            </p>
+            <a class="svg-wrapper" href="files/CV.pdf" target="_blank">
+                <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="shape" height="60" width="320" />
+                    <div class="text">Mon CV <p class="cvlink"> >></p></div>
+                </svg>
+            </a>
+        </div>
+        <a href="#">
+            <div class="arrows">
+                <img class="arrow" id="leftArrow" src="images/down.png" alt="leftArrow">
+                <img class="arrow" id="rightArrow" src="images/down.png" alt="rightArrow">
+            </div>
+        </a>
+    </div>
+    <footer>
+        <div class="navfooter">
+
+        </div>
+        <div class="infosfooter">
+
+        </div>
+        <div class="contactfooter">
+
+        </div>
+    </footer>
+</body>

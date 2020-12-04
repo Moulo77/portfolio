@@ -1,0 +1,194 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    color: white;
+    font-family: 'Roboto Condensed';
+}
+
+body {
+    background: linear-gradient(30deg, black, #343a40, black);
+    background-size: 100% 500%;
+    animation: gradient 10s infinite;
+    z-index: 1;
+}
+
+
+/*
+*   Barre de navigation
+*/
+
+#listemenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#listemenu:hover li:not(:hover) a {
+    opacity: 0.2;
+}
+
+#listemenu li {
+    position: relative;
+    padding: 0px 25px 0px 25px;
+    cursor: pointer;
+}
+
+#listemenu li::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #3c9c84;
+    transform: scaleX(0);
+    transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#listemenu li:hover::after,
+#listemenu li.active::after {
+    transform: scaleX(1);
+}
+
+#listemenu li a {
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#name {
+    border-right: 2px ridge #3c9c84;
+    padding-right: 25px;
+}
+
+
+/*
+*   Haut de page
+*/
+
+@keyframes gradient {
+    0% {
+        background-position: 50% 0%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 50% 0%;
+    }
+}
+
+#presentation {
+    background: none;
+    height: 100vh;
+}
+
+@keyframes down {
+    0% {
+        position: relative;
+        bottom: 20px;
+        opacity: 0.2;
+    }
+    50% {
+        position: relative;
+        bottom: 10px;
+        opacity: 0.5;
+    }
+    100% {
+        position: relative;
+        bottom: 0px;
+        opacity: 0.9;
+    }
+}
+
+.arrows {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.arrows:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.arrow {
+    margin-top: 25px;
+    position: relative;
+    bottom: 0px;
+    height: 75px;
+    animation: down 0.5s infinite linear alternate;
+}
+
+#about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15em;
+    position: relative;
+    font-size: 200%;
+}
+
+#texte {
+    color: gray;
+}
+
+.svg-wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 320px;
+}
+
+.shape {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    fill: transparent;
+    stroke: #3c9c84;
+    border-bottom: 5px solid black;
+    transition: stroke-dasharray 1s, stroke-width 1s, stroke-dashoffset 1s;
+}
+
+.text {
+    font-family: 'Roboto Condensed';
+    font-size: 22px;
+    letter-spacing: 8px;
+    color: white;
+    top: -48px;
+    position: relative;
+}
+
+.svg-wrapper:hover {
+    text-decoration: none;
+}
+
+.svg-wrapper:hover .shape {
+    stroke-width: 2px;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 0;
+}
+
+.cvlink {
+    display: none;
+}
+
+.svg-wrapper:hover .cvlink {
+    display: inline-block;
+}
