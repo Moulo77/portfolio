@@ -28,7 +28,7 @@
                     <a class="nav-link" href="#">Compétences</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Projets</a>
+                    <a class="nav-link" href="#mesprojets">Projets</a>
                 </li>
             </ul>
         </div>
@@ -44,26 +44,63 @@
             <a class="svg-wrapper" href="files/CV.pdf" target="_blank">
                 <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
                     <rect class="shape" height="60" width="320" />
-                    <div class="text">Mon CV <p class="cvlink"> >></p></div>
+                    <div class="text">Mon CV<p class="cvlink"> >></p></div>
                 </svg>
             </a>
         </div>
-        <a href="#">
-            <div class="arrows">
+        <a href="#mesprojets">
+            <div class="arrows" id="mesprojets">
                 <img class="arrow" id="leftArrow" src="images/down.png" alt="leftArrow">
                 <img class="arrow" id="rightArrow" src="images/down.png" alt="rightArrow">
             </div>
         </a>
     </div>
+    <div class="separator"></div><br/>
+    <div class="projets">
+        <div class="titrepres">
+            <h2>Mes différents projets scolaires/personnels</h2>
+            <div class="undertitle"></div>
+        </div>
+        <br/><br/>
+        <p>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Site techbox<a href="#imagelink1"></a></button>
+        </p>
+        <div class="row">
+            <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <img id="imagelink1" src="images/techbox.png" alt="techbox" width="600px" height="350px">
+                </div>
+            </div>
+            <div class="col" id="textpro">
+                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                    <div class="desc">
+                        <p>Lors de notre projet tutoré du semestre 1, nous devions mettre en place un site web en HTML5/CSS3,
+                        présentant une dizaines de métier de l'informatique.</p><br/>
+                        <a class="svg-wrapper" href="http://techbox.alwaysdata.net" target="_blank">
+                            <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="shape" height="60" width="320" />
+                                <div class="text">Le site techbox <p class="cvlink"> >></p></div>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br/>
+    <div class="lilseparator"></div><br/>
     <footer>
-        <div class="navfooter">
-
+        <div class="allfooter">
+            <div class="partfooter">
+                <h2>Navigation</h2>
+                <a href="#mesprojets">Mes projets</a>
+            </div>
+            <div class="partfooter">
+                <h2>Informations</h2>
+            </div>
+            <div class="partfooter">
+                <h2>Me contacter</h2>
+            </div>
         </div>
-        <div class="infosfooter">
-
-        </div>
-        <div class="contactfooter">
-
-        </div>
+        <p class="copyright">Copyright 2020 © - All rights reserved</p>
     </footer>
 </body>

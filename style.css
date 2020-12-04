@@ -6,13 +6,39 @@ body {
     overflow-x: hidden;
     color: white;
     font-family: 'Roboto Condensed';
+    letter-spacing: 2px;
 }
 
 body {
     background: linear-gradient(30deg, black, #343a40, black);
     background-size: 100% 500%;
     animation: gradient 10s infinite;
+    width: 100%;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/*
+* Séparateur de parties
+*/
+
+.separator {
+    margin-right: auto;
+    margin-left: auto;
+    width: 95%;
+    height: 2px;
+    background-color: #3c9c84;
+}
+
+.lilseparator {
+    margin-right: auto;
+    margin-left: auto;
+    width: 65%;
+    height: 2px;
+    background-color: #3c9c84;
 }
 
 
@@ -141,13 +167,20 @@ body {
     margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
-    width: 15em;
+    width: 17em;
     position: relative;
     font-size: 200%;
 }
 
 #texte {
-    color: gray;
+    color: #3c9c84;
+}
+
+#about h2 {
+    font-family: 'Roboto Condensed';
+    letter-spacing: 8px;
+    font-size: 130%;
+    color: #3c9c84;
 }
 
 .svg-wrapper {
@@ -191,4 +224,77 @@ body {
 
 .svg-wrapper:hover .cvlink {
     display: inline-block;
+}
+
+
+/*
+*   Partie projets
+*/
+
+.projets {
+    width: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.titrepres {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+}
+
+.undertitle {
+    width: 15em;
+    height: 7px;
+    margin-left: 2em;
+    background-color: #3c9c84;
+    border-radius: 6px;
+}
+
+.desc {
+    width: 500px;
+    font-size: 150%;
+    text-align: center;
+}
+
+.row {
+    width: 90%;
+}
+
+#textpro {
+    margin-left: 10%;
+}
+
+
+/*
+*   footer
+*/
+
+footer {
+    width: 100%;
+    background-color: #343a40;
+    height: 250px;
+}
+
+.allfooter {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.partfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.copyright {
+    position: absolute;
+    margin-left: 39%;
+    margin-top: 115px;
 }
