@@ -10,6 +10,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="nav.js" defer></script>
     <script src="text.js" defer></script>
+    <script src="popup.js" defer></script>
 </head>
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
@@ -28,7 +29,10 @@
                     <a class="nav-link" href="#mesprojets">Projets</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Compétences</a>
+                    <a class="nav-link" href="#competences">Compétences</a>
+                </li>
+                <li class="navbar-nav">
+                    <a class="nav-link" href="#footer">Bas de page</a>
                 </li>
             </ul>
         </div>
@@ -65,7 +69,7 @@
         
         <!-- premier projet -->
         <p id="boutoncollapse">
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse1" aria-expanded="false" aria-controls="multiCollapsetechbox1 multiCollapsetechbox2">Site techbox<a href="#imagelink1"></a></button>
+            <button class="btn btn-dark" type="button" data-toggle="collapse" data-target=".multi-collapse1" aria-expanded="false" aria-controls="multiCollapsetechbox1 multiCollapsetechbox2">Site techbox<a href="#imagelink1"></a></button>
         </p>
         <div class="row">
             <div class="col">
@@ -92,7 +96,7 @@
     
     <!-- deuxieme projet -->
     <p id="boutoncollapse">
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse2" aria-expanded="false" aria-controls="multiCollapsepong1 multiCollapsepong2">Jeu Pong<a href="#imagelink1"></a></button>
+        <button class="btn btn-dark" type="button" data-toggle="collapse" data-target=".multi-collapse2" aria-expanded="false" aria-controls="multiCollapsepong1 multiCollapsepong2">Jeu Pong<a href="#imagelink1"></a></button>
     </p>
     <div class="row">
             <div class="col">
@@ -119,7 +123,7 @@
     
     <!-- troisieme projet -->
     <p id="boutoncollapse">
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse3" aria-expanded="false" aria-controls="multiCollapsesoupe1 multiCollapsesoupe2">Jeu Soupe<a href="#imagelink1"></a></button>
+        <button class="btn btn-dark" type="button" data-toggle="collapse" data-target=".multi-collapse3" aria-expanded="false" aria-controls="multiCollapsesoupe1 multiCollapsesoupe2">Jeu Soupe<a href="#imagelink1"></a></button>
     </p>
     <div class="row">
             <div class="col">
@@ -147,7 +151,7 @@
     
     <!-- quatrieme projet -->
     <p id="boutoncollapse">
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse4" aria-expanded="false" aria-controls="multiCollapseIMC1 multiCollapseIMC2">Calcul IMC<a href="#imagelink1"></a></button>
+        <button class="btn btn-dark" type="button" data-toggle="collapse" data-target=".multi-collapse4" aria-expanded="false" aria-controls="multiCollapseIMC1 multiCollapseIMC2">Calcul IMC<a href="#imagelink1"></a></button>
     </p>
     <div class="row">
             <div class="col">
@@ -170,25 +174,50 @@
                 </div>
             </div>
         </div><br/>
-    <div class="lilseparator"></div><br/>
+        <div class="lilseparator" id="competences"></div><br/>
     </div>
-    <footer>
+    <div class="competences">
+        <div class="titrepres">
+            <h2>Mes compétences en informatiques et autres</h2>
+            <div class="undertitle"></div>
+        </div>
+        <br/><br/>
+    </div>
+    <footer id="footer">
         <div class="footer">
             <div class="allfooter">
                 <div class="partfooter">
-                    <h2>Navigation</h2>
+                    <h2>Navigation</h2><br>
+                    <a href="#presentation">Présentation</a><br/>
                     <a href="#mesprojets">Mes projets</a>
                 </div>
                 <div class="partfooter">
-                    <h2>Informations</h2>
+                    <h2>Informations</h2><br/>
+                    <p>Deuxième année de DUT Informatique</p>
+                    <div class="lilseparator2"></div>
+                    <p>Université de la Rochelle</p>
+                    <div class="lilseparator2"></div>
+                    <p>Site réalisé en HTML5/CSS3, JavaScript<br/> et avec bootstrap</p><br/><br/>
+                    <p>Copyright 2020 © - All rights reserved</p>
                 </div>
                 <div class="partfooter">
-                    <h2>Me contacter</h2>
-                    <a href="mailto: leoportier7@gmail.com?subject=Prise%20de%20contact">par mail</a>
+                    <h2>Me contacter</h2><br/>
+                    <a id="btnPopup" class="btnPopup" href="mailto: leoportier7@gmail.com?subject=Prise%20de%20contact">Envoyer un mail</a><br/>
+                    <div id="overlay" class="overlay">																							
+					    <div id="popup" class="popup">
+                            <h2>																																			
+                                Contact
+                                <span id="btnClose" class="btnClose">&times;</span>
+                            </h2> <br/><br/>
+                                <div>
+                                    Votre demande de contact a été prise en compte.
+                                    Vous allez être rediriger pour rédiger et envoyer un mail pour contacter le propriétaire du site.
+                                </div>
+                        </div>
+                    </div>
                     <a href="https://www.linkedin.com/in/l%C3%A9o-portier-5497ab1a1/" target="_blank">Consulter mon profil linkedin</a>
                 </div>
             </div>
-            <p class="copyright">Copyright 2020 © - All rights reserved</p>
         </div>
     </footer>
 </body>
