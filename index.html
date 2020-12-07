@@ -22,13 +22,13 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav" id="listemenu">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Description<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Compétences</a>
+                    <a class="nav-link" href="#presentation">Description<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#mesprojets">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Compétences</a>
                 </li>
             </ul>
         </div>
@@ -62,17 +62,19 @@
             <div class="undertitle"></div>
         </div>
         <br/><br/>
-        <p>
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Site techbox<a href="#imagelink1"></a></button>
+        
+        <!-- premier projet -->
+        <p id="boutoncollapse">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse1" aria-expanded="false" aria-controls="multiCollapsetechbox1 multiCollapsetechbox2">Site techbox<a href="#imagelink1"></a></button>
         </p>
         <div class="row">
             <div class="col">
-                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="collapse multi-collapse1" id="multiCollapsetechbox1">
                     <img id="imagelink1" src="images/techbox.png" alt="techbox" width="600px" height="350px">
                 </div>
             </div>
             <div class="col" id="textpro">
-                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                <div class="collapse multi-collapse1" id="multiCollapsetechbox2">
                     <div class="desc">
                         <p>Lors de notre projet tutoré du semestre 1, nous devions mettre en place un site web en HTML5/CSS3,
                         présentant une dizaines de métier de l'informatique.</p><br/>
@@ -85,22 +87,108 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div><br/>
+        </div><br/>
     <div class="lilseparator"></div><br/>
+    
+    <!-- deuxieme projet -->
+    <p id="boutoncollapse">
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse2" aria-expanded="false" aria-controls="multiCollapsepong1 multiCollapsepong2">Jeu Pong<a href="#imagelink1"></a></button>
+    </p>
+    <div class="row">
+            <div class="col">
+                <div class="collapse multi-collapse2" id="multiCollapsepong1">
+                    <img id="imagelink1" src="images/pong.png" alt="pong" width="600px" height="350px">
+                </div>
+            </div>
+            <div class="col" id="textpro">
+                <div class="collapse multi-collapse2" id="multiCollapsepong2">
+                    <div class="desc">
+                        <p>Quand j'ai commencé la programmation au lycée, avec processing,
+						j'ai réalisé un pong en solitaire, un jeu que l'on ne présente plus.</p><br/>
+                        <a class="svg-wrapper" href="files/pong.zip" target="_blank">
+                            <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="shape" height="60" width="320" />
+                                <div class="text">Télécharger <p class="cvlink"> >></p></div>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div><br/>
+    <div class="lilseparator"></div><br/>
+    
+    <!-- troisieme projet -->
+    <p id="boutoncollapse">
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse3" aria-expanded="false" aria-controls="multiCollapsesoupe1 multiCollapsesoupe2">Jeu Soupe<a href="#imagelink1"></a></button>
+    </p>
+    <div class="row">
+            <div class="col">
+                <div class="collapse multi-collapse3" id="multiCollapsesoupe1">
+                    <img id="imagelink1" src="images/soupe.png" alt="soupe" width="600px" height="350px">
+                </div>
+            </div>
+            <div class="col" id="textpro">
+                <div class="collapse multi-collapse3" id="multiCollapsesoupe2">
+                    <div class="desc">
+                        <p>En terminal option ISN, nous avions comme projet avec mon binome un jeu interactif et éducatif
+						pour les maternels d'une école de Sablé sur Sarthe. Ce jeu devait être audio et aider les enfants 
+						à revoir le vocabulaire de la soupe.</p><br/>
+                        <a class="svg-wrapper" href="files/soupe.zip" target="_blank">
+                            <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="shape" height="60" width="320" />
+                                <div class="text">Télécharger <p class="cvlink"> >></p></div>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div><br/>
+    <div class="lilseparator"></div><br/>
+    
+    <!-- quatrieme projet -->
+    <p id="boutoncollapse">
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse4" aria-expanded="false" aria-controls="multiCollapseIMC1 multiCollapseIMC2">Calcul IMC<a href="#imagelink1"></a></button>
+    </p>
+    <div class="row">
+            <div class="col">
+                <div class="collapse multi-collapse4" id="multiCollapseIMC1">
+                    <img id="imagelink1" src="images/IMC.png" alt="IMC">
+                </div>
+            </div>
+            <div class="col" id="textpro">
+                <div class="collapse multi-collapse4" id="multiCollapseIMC2">
+                    <div class="desc">
+                        <p>Lors de notre apprentissage du langage javafx, j'ai réaliser un calculateur d'indice de masse corporel
+					        pour m'exercer.</p><br/>
+                        <a class="svg-wrapper" href="files/IMC.jar" target="_blank">
+                            <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="shape" height="60" width="320" />
+                                <div class="text">Télécharger <p class="cvlink"> >></p></div>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div><br/>
+    <div class="lilseparator"></div><br/>
+    </div>
     <footer>
-        <div class="allfooter">
-            <div class="partfooter">
-                <h2>Navigation</h2>
-                <a href="#mesprojets">Mes projets</a>
+        <div class="footer">
+            <div class="allfooter">
+                <div class="partfooter">
+                    <h2>Navigation</h2>
+                    <a href="#mesprojets">Mes projets</a>
+                </div>
+                <div class="partfooter">
+                    <h2>Informations</h2>
+                </div>
+                <div class="partfooter">
+                    <h2>Me contacter</h2>
+                    <a href="mailto: leoportier7@gmail.com?subject=Prise%20de%20contact">par mail</a>
+                    <a href="https://www.linkedin.com/in/l%C3%A9o-portier-5497ab1a1/" target="_blank">Consulter mon profil linkedin</a>
+                </div>
             </div>
-            <div class="partfooter">
-                <h2>Informations</h2>
-            </div>
-            <div class="partfooter">
-                <h2>Me contacter</h2>
-            </div>
+            <p class="copyright">Copyright 2020 © - All rights reserved</p>
         </div>
-        <p class="copyright">Copyright 2020 © - All rights reserved</p>
     </footer>
 </body>
