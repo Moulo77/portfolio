@@ -292,6 +292,26 @@ body {
     margin-right: 100px;
 }
 
+.competences table{
+	align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+	border: 2px solid #3c9c84;
+}
+
+.competences table tr{
+	width: 100px;
+}
+
+.competences table td{	
+	border: 1px solid lightgray;
+}
+
+.competences table th{
+	text-align: center;
+	border: 2px solid #3c9c84;
+}
+
 
 /*
 *   footer
