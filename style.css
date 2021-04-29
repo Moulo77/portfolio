@@ -248,13 +248,13 @@ body {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    width: 30em;
+    width: 50em;
 }
 
 .undertitle {
     width: 15em;
     height: 7px;
-    margin-left: 2em;
+    margin-left: 12em;
     background-color: #3c9c84;
     border-radius: 6px;
 }
